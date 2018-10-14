@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { connect } from "react-redux";
-import Icon from "react-native-vector-icons/FontAwesome";
+import Icon from "react-native-vector-icons/FontAwesome5";
 
 class AuthScreen extends Component {
   constructor(props) {
@@ -11,7 +11,11 @@ class AuthScreen extends Component {
   render() {
     return (
       <View>
-        <Icon name="rocket" size={30} color="#900" />
+        <Icon name="heart" size={30} color="#666" />
+        <Icon name="adjust" size={30} color="#000" />
+        <Icon name="desktop" size={30} color="#000" />
+        <Icon name="android" size={30} color="#000" />
+        <Icon name="slack" size={30} color="#900" />
       </View>
     );
   }
@@ -25,17 +29,15 @@ const styles = StyleSheet.create({
   }
 });
 
-const mapStateToProps = state => {
-  return {};
-};
+// const mapStateToProps = state => {
+//   return {};
+// };
 
-const mapDispatchToProps = dispatch => {
-  return {};
-};
+// const mapDispatchToProps = dispatch => {
+//   return {};
+// };
 
-// export default connect(
-//   mapStateToProps,
-//   mapDispatchToProps
-// )(AuthScreen);
-
-export default AuthScreen;
+export default connect(
+  null,
+  null
+)(AuthScreen);
